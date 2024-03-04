@@ -1,0 +1,49 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "video 01",
+    "description": "Esse é o primeiro video",
+    "duration": 180
+}
+
+###
+
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "Gatinhos",
+    "description": "Video de gatos fofos",
+    "duration": 60
+}
+
+###
+
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "node",
+    "description": "Node tutorial",
+    "duration": 90
+}
+
+###
+
+GET http://localhost:3333/videos
+
+###
+
+PUT http://localhost:3333/videos/83e0f2f7-8d40-497b-a93f-c0d744cfa6cf
+Content-Type: application/json
+
+{
+    "title": "Panda vermelho brincando",
+    "description": "Panda vermelho fofinho",
+    "duration": 300
+}
+
+###
+
+DELETE http://localhost:3333/videos/e5e53653-0947-4829-9efc-ff7d1e9e936b
